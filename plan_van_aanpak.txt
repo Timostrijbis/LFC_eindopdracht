@@ -8,6 +8,7 @@ Virtual environment created
 
 - Create a github repo
 
+Repo created:
 https://github.com/Timostrijbis/LFC_eindopdracht.git
 
 - Look at data
@@ -20,8 +21,51 @@ All data in tsv format. Each line is a separate tweet, with the 'OFF' or 'NOT' a
 - Look at slides
 
 Important! Save information about experiments in the experiments folder
+
 - Background research
+
+OLF-ML (https://www.proquest.com/openview/296cbc7c56be1321cba0cd303daee9f7/1?pq-origsite=gscholar&cbl=2032364)
+
+This paper proposes a comprehensive framework for offensive language identification, 
+categorization, and target detection using traditional machine learning methods—Support Vector 
+Machine (SVM), Random Forest (RF), and Artificial Neural Network (ANN)—on the OLID dataset. 
+The approach involves extensive preprocessing (tokenization, lemmatization, stopword removal, 
+TF-IDF vectorization) and careful hyperparameter tuning. Among the three models, SVM achieved 
+the best results with accuracy scores of 77%, 88%, and 68% across subtasks A, B, and C. 
+The study demonstrates that even classical ML methods, when optimized and well-engineered, 
+can outperform some earlier deep learning approaches.
+
+⚡ Key Methodological Improvements That Boosted Performance
+Sophisticated text preprocessing:
+Lowercasing, tokenization, lemmatization, and stopword removal 
+reduced noise and improved 
+feature quality.TF-IDF vectorization effectively highlighted discriminative terms without 
+needing large datasets.
+Label encoding + subtask-wise preprocessing:
+Non-offensive samples removed for subtasks B and C improved label balance and focus.
+Hyperparameter tuning:
+Optimal SVM configuration (C=1.0, linear kernel) provided strong margin separation.
+Adjusting RF n_estimators and ANN parameters enhanced stability.
+Task-specific modeling:
+Separate models for detection, categorization, and target identification improved subtask performance.
+Evaluation strategy:
+Used accuracy, precision, recall, and F1 to guide tuning; confusion matrices for error analysis.
+
+
+
+
+
 - Decide approach
+
+1. Preprocessing:
+Lowercasing, tokenization, and stopword removal 
+2. solve class imbalance:
+Solid dataset
+Undersampling
+Oversampling
+
+
+
 - Formulate research questions
 - Create baseline with ML
 - Train LSTM model
