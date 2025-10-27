@@ -1,0 +1,30 @@
+Task: offensive language identification
+Deadline: 03-11-2025
+
+- Create a workspace
+
+Data downloaded
+Virtual environment created
+
+- Create a github repo
+
+https://github.com/Timostrijbis/LFC_eindopdracht.git
+
+- Look at data
+
+Train: 12240 lines
+Dev: 1000 lines
+Test: 860 lines
+All data in tsv format. Each line is a separate tweet, with the 'OFF' or 'NOT' at the end
+
+- Look at slides
+
+Important! Save information about experiments in the experiments folder
+- Background research
+- Decide approach
+- Formulate research questions
+- Create baseline with ML
+- Train LSTM model
+- Train LLM model
+- Write report
+- Hand in report + code
